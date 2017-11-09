@@ -399,6 +399,8 @@
 
 &i2s {
 	#sound-dai-cells = <0>;
+	assigned-clocks = <&cru SCLK_I2S_PRE>;
+	assigned-clock-parents = <&cru SCLK_I2S_FRAC>;
 	status = "okay";
 };
 
